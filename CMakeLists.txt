@@ -23,6 +23,7 @@ add_executable(PortfolioManager
     portfolio_manager.cpp
     portfolio_manager.h
     portfolio_manager.ui
+    resources.qrc
   )
 
 target_link_libraries(PortfolioManager PRIVATE Qt5::Widgets)
