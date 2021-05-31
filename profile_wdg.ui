@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Profile Info</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/icons/user.ico</normaloff>:/icons/icons/user.ico</iconset>
+  </property>
   <widget class="QPushButton" name="create_portfolio_btn">
    <property name="geometry">
     <rect>
@@ -62,6 +66,8 @@
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
