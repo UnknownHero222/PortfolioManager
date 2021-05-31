@@ -23,6 +23,9 @@ add_executable(PortfolioManager
     portfolio_manager.cpp
     portfolio_manager.h
     portfolio_manager.ui
+    profile_wdg.ui
+    profile_wdg.h
+    profile_wdg.cpp
     resources.qrc
   )
 
