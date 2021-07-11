@@ -20,9 +20,6 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 add_executable(PortfolioManager
     main.cpp
-    portfolio_manager.cpp
-    portfolio_manager.h
-    portfolio_manager.ui
     profile_wdg.ui
     profile_wdg.h
     profile_wdg.cpp
