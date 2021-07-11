@@ -65,7 +65,7 @@
       </property>
      </item>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>11</x>
@@ -89,23 +89,6 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="2">
-       <widget class="QLabel" name="price_lbl">
-        <property name="text">
-         <string>Price</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="3">
-       <widget class="QLabel" name="count_lbl">
-        <property name="text">
-         <string>Count</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLineEdit" name="title_txt_box"/>
-      </item>
       <item row="1" column="1">
        <widget class="QLineEdit" name="id_txt_box">
         <property name="sizePolicy">
@@ -116,15 +99,22 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="2">
-       <widget class="QDoubleSpinBox" name="price_spinbox"/>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="title_txt_box"/>
       </item>
-      <item row="1" column="3">
-       <widget class="QDoubleSpinBox" name="count_spinbox"/>
+      <item row="0" column="2">
+       <widget class="QLabel" name="count_lbl">
+        <property name="text">
+         <string>Count</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QSpinBox" name="spinBox"/>
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>10</x>

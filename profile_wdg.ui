@@ -6,64 +6,96 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>442</width>
+    <height>218</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Profile Info</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="resources.qrc">
+   <iconset>
     <normaloff>:/icons/icons/user.ico</normaloff>:/icons/icons/user.ico</iconset>
   </property>
-  <widget class="QPushButton" name="create_portfolio_btn">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>220</y>
-     <width>141</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Create portfolio</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="exit_btn">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>220</y>
-     <width>141</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Exit</string>
-   </property>
-  </widget>
-  <widget class="QFrame" name="frame">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
      <y>30</y>
-     <width>321</width>
-     <height>171</height>
+     <width>141</width>
+     <height>141</height>
     </rect>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+   <property name="text">
+    <string/>
    </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/icons/icons/man.ico</pixmap>
    </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>30</y>
+     <width>251</width>
+     <height>141</height>
+    </rect>
    </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
+   <property name="title">
+    <string/>
    </property>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>221</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Portfolio name</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="portfolio_names_box"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="new_btn">
+       <property name="text">
+        <string>Add new</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="enter_btn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Enter</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
  </widget>
  <resources>

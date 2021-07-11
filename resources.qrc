@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/icons">
         <file>icons/chart.ico</file>
-        <file>icons/user.ico</file>
+        <file>icons/man.ico</file>
     </qresource>
 </RCC>
