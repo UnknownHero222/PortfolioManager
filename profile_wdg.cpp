@@ -18,5 +18,6 @@ void ProfileWdg::on_new_btn_clicked() {
   PortfolioTitleDlg dlg;
   if (dlg.exec() == QDialog::Accepted) {
     ui->portfolio_names_box->addItem(dlg.portfolio_title);
+    ui->enter_btn->setEnabled(true);
   }
 }
