@@ -6,17 +6,17 @@
 ProfileWdg::ProfileWdg(QWidget *parent)
     : QWidget(parent), ui(new Ui::ProfileWdg) {
   ui->setupUi(this);
+
+  if (ui->portfolio_names_box->count() > 0) {
+    ui->enter_btn->setEnabled(true);
+  }
 }
 
 ProfileWdg::~ProfileWdg() { delete ui; }
 
-void ProfileWdg::on_exit_btn_clicked() { close(); }
-
-void ProfileWdg::on_create_portfolio_btn_clicked() {
-  PortfolioTitleDlg title_dlg;
-
-  auto dlg_result = title_dlg.exec();
-  if (dlg_result == QDialog::Accepted) {
-    // TODO open manager window
+void ProfileWdg::on_new_btn_clicked() {
+  PortfolioTitleDlg dlg;
+  if (dlg.exec() == QDialog::Accepted) {
+    ui->portfolio_names_box->addItem(dlg.portfolio_title);
   }
 }

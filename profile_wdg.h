@@ -15,9 +15,7 @@ class ProfileWdg : public QWidget {
   ~ProfileWdg();
 
  private slots:
-  void on_exit_btn_clicked();
-
-  void on_create_portfolio_btn_clicked();
+  void on_new_btn_clicked();
 
  private:
   Ui::ProfileWdg *ui;

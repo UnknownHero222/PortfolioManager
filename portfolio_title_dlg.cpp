@@ -11,6 +11,7 @@ PortfolioTitleDlg::~PortfolioTitleDlg() { delete ui; }
 
 void PortfolioTitleDlg::on_ok_btn_clicked() {
   portfolio_title = ui->portfolio_title_pln->toPlainText();
+  accept();
 }
 
-void PortfolioTitleDlg::on_cancel_btn_clicked() {}
+void PortfolioTitleDlg::on_cancel_btn_clicked() { reject(); }

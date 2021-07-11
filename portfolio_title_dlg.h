@@ -18,7 +18,6 @@ class PortfolioTitleDlg : public QDialog {
 
  private slots:
   void on_ok_btn_clicked();
-
   void on_cancel_btn_clicked();
 
  private:
